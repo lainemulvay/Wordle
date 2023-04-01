@@ -1,0 +1,61 @@
+/* Style for Wordle Website */
+@font-face {
+    font-family: "Neuropol X RG";
+    src: url("neuropol x rg.otf") format("opentype");
+}
+body {
+    background-color: #000000;
+    color: #51ff00;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-image: url(Wordle_Code_Background.jpg);
+    background-size: 145%;
+}   
+h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: "Neuropol X RG", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+table {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    border-collapse: collapse;
+    font-size: 1.3em;
+    font-weight: bolder;
+    background-color: #000000;
+  }
+td {
+    padding: 10px;
+    border: #51ff00 3px solid;
+    width: 30px; /* set width and height to the same value */
+    height: 30px;
+    text-align: center;
+}
+#enter-guess {
+    font-weight: bolder;
+    padding: 20px;
+}
+#level2 {
+    background-color: #51ff00;
+    color: #000000;
+}
+#level1 {
+    background-color: #1f6100;
+    color: #51ff00;
+}
+#written-feedback, #play-wordle, #guess-input {
+    background-color: #000000;
+    color: #51ff00;
+    outline: 2px solid #51ff00;
+}
+#problem span, #play-again span {
+    background-color: #000000;
+    color: #51ff00;
+}

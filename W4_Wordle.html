@@ -1,0 +1,27 @@
+<!-- TODO: keep feedback around-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordle Game</title>
+    <script src="W5_Wordle.js"></script>
+    <link rel="stylesheet" href="W5_Wordle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  </head>
+  <body onload="focusInputField()">
+    <h1>WORDLE</h1>
+    <div id="enter-guess">
+      <label for="guess-input">Enter your guess for todays word:</label>
+      <input type="text" id="guess-input" oninput="this.value = this.value.toUpperCase()">    
+    </div>
+    <button id="play-wordle" onclick="wordle()">Try my Guess</button>
+    <button id="written-feedback" onclick="getWrittenFeedback()">Get Written Feedback</button>
+    <p id="problem"></p>
+    <table id="feedback-table">
+    </table>
+    <h2 id="out-of-guesses"></h2>
+    <h2 id="answer"></h2>
+    <p id="play-again"></p>
+  </body>
+</html>
